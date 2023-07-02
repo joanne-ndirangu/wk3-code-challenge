@@ -1,3 +1,17 @@
+fetch('http://localhost:3000', {
+    method: "GET",
+    headers: {
+        "Content-Type": "application/json"
+    }
+})
+    .then(res => res.json())
+    .then(data => {
+        // Handle the response data
+    })
+    .catch(error => {
+        // Handle any errors
+    });
+
 //make a request for the first film
 fetch(`http://localhost:3000/films/1`)
 .then(res => res.json())
@@ -58,7 +72,7 @@ function filmDetails(film) {
     }
 
 //Function to reduce available details for every ticket bought
-    function buyTicket(filmId) {
+    function buyTicket() {
         let ticketsElem = document.querySelector('.tickets');
         let availableTickets = parseInt(ticketsElem.textContent.split(': ')[1])
 
