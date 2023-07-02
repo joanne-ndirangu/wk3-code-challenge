@@ -1,0 +1,21 @@
+body {
+    background-color: azure;
+}
+.container {
+    display: flex;
+  }
+
+  #films {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  #first-film {
+    flex: 1;
+  }
+
+  .pic {
+    max-width: 40%;
+    max-height: 50%;
+    text-align: center;
+  }
