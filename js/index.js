@@ -24,7 +24,7 @@ fetch(`http://localhost:3000/films/1`)
     const availableTickets = film.capacity - film.tickets_sold
     firstFilmElement.innerHTML = `
       <img class="pic" src="${film.poster}" alt="${film.title}">
-      <h2>${film.title}</h2>
+      <h3>${film.title}</h3>
       <p>${film.description}</p>
       <p>Runtime: ${film.runtime} minutes</p>
       <p>Showtime: ${film.showtime}</p>
@@ -60,7 +60,7 @@ function filmDetails(film) {
         let firstFilmElement = document.getElementById('first-film');
         firstFilmElement.innerHTML = `
           <img class="pic" src="${selectedFilm.poster}" alt="${selectedFilm.title}">
-          <h2>${selectedFilm.title}</h2>
+          <h3>${selectedFilm.title}</h3>
           <p>${selectedFilm.description}</p>
           <p>Runtime: ${selectedFilm.runtime} minutes</p>
           <p>Showtime: ${selectedFilm.showtime}</p>
